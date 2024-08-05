@@ -535,9 +535,15 @@
             </p>
             <div class="geometric-box"></div>
         </div>
+       
+     
         <div class="contact__mail">
             <h2 class="contact__title">Send Me A Message</h2>
-            <form action="send_mail.php" method="post" class="contact__form" >
+            <!-- <form action="send_mail.php" method="post" class="contact__form" > -->
+               <form action="https://api.web3forms.com/submit" method="POST">
+
+                  <!-- Replace with your Access Key -->
+                  <input type="hidden" name="access_key" value="bc325bda-2fe5-463d-bcea-dcaf0be7bb79">
                 <div class="contact__group">
                     <div class="contact__box">
                         <input type="text" name="name" class="contact__input" placeholder="First Name" required>
